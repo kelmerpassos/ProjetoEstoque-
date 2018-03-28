@@ -16,6 +16,11 @@ class ProdutoController extends Controller
 
     public function detalhes(){
         $produtos = DB::select('select * from produtos where id=1');
-        return view('detalhes')->with('p',$produtos);
+        if (empty($produtos)){
+            return "Este produto não existe";
+        }else{
+            return view('detalhes')->with('p',$produtos[0]);
+        }
+
     }
 }

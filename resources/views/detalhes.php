@@ -7,10 +7,10 @@
         <div class="container">
             <h1>Detalhes do produto</h1>
             <table>
-                <tr><td>Nome</td><td><?= $p[0]->nome ?></td></tr>
-                <tr><td>Valor</td><td<?= $p[0]->valor ?></td></tr>
-                <tr><td>Descrição</td><td><?= $p[0]->descricao ?></td></tr>
-                <tr><td>Quantidade</td><td><?= $p[0]->quantidade ?></td></tr>
+                <tr><td>Nome</td><td><?= $p->nome ?></td></tr>
+                <tr><td>Valor</td><td<?= $p->valor ?></td></tr>
+                <tr><td>Descrição</td><td><?= $p->descricao ?></td></tr>
+                <tr><td>Quantidade</td><td><?= $p->quantidade ?></td></tr>
             </table>
         </div>
     </body>
