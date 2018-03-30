@@ -13,7 +13,7 @@
                     <td> <?= $p->valor ?></td>
                     <td> <?= $p->descricao ?></td>
                     <td> <?= $p->quantidade ?></td>
-                    <td> <a href="/produtos/mostra">
+                    <td> <a href="/produtos/mostra?id=<?=$p->id?>">
                             Visualizar
                         </a>
                     </td>
