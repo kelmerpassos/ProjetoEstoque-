@@ -12,5 +12,5 @@
 */
 
 Route::get('/', 'ProdutoController@lista');
-Route::get('/produtos/mostra','ProdutoController@detalhes');
+Route::get('/produtos/mostra/{id}','ProdutoController@detalhes')->where('id', '[0-9]+');
 
